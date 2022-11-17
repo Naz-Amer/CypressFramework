@@ -10,10 +10,15 @@ module.exports = defineConfig({
     specPattern: 'cypress/integration/LearningCypressFramework/*js',
     defaultCommandTimeout:8000,
     pageLoadTimeout:10000,
+    reporter: 'mochawesome',
 
     "env":
     {
         "url":"https://rahulshettyacademy.com/angularpractice/"
+    },
+    
+    "retries":{
+      "runMode":1
     }
     
   }
